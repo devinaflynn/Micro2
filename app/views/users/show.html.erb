@@ -17,14 +17,13 @@
   </div>
   <div class="col-lg-3">
   <div class="well">
-   Featured Users
-    <%= render 'partials/user_info', view_type: 'profile', user: @user %>
-  
-   <%= render 'partials/user_info', view_type: 'profile', user: @user %>
-
-   <%= render 'partials/user_info', view_type: 'profile', user: @user %>
-  
-
+    <% User.all.each do |user| %>
+ 
+      <%= render 'partials/user_info', view_type: 'profile', user: user unless user == current_user %>
+      <% unless user == current_user || following?(user) %>
+        <%= link_to fa_icon("user-plus").html_safe, relationships_path(friend_id: user.id), method: :post, remote: true, class: 'btn btn-primary' %>
+      <% end %>
+    <% end %>
 
    </div>
    </div>
