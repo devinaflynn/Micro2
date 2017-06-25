@@ -1,3 +1,35 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+  .home-header {
+    
+    margin-bottom: 40px;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+  .home-subheader {
+    
+    font-size: 19px;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+
+
+
+/* Success */
+.btn-success, .btn-success:focus {
+    background-color: #7f00ff;
+    border-color: #7f00ff;
+}
+.btn-success.hover, .btn-success:hover, .open .dropdown-toggle.btn-success {
+    background-color: #40d9ca;
+    border-color: #40d9ca;
+}
+.bg-success {background-color: #10cfbd;}
+.bg-success-light {background-color: #40d9ca;}
+.bg-success-dark {background-color: #0da899;}

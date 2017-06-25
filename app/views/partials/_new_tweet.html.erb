@@ -1,6 +1,6 @@
 <%= form_tag tweets_path(parent_id: tweet_id), multipart: true, method: :post, remote: true do %>
   <div class="form-group">
-    <%= text_area_tag "tweet[tweet_text]", nil, class: "form-control", placeholder: "Share something you have learned, a startup resourse, piece of information, infographic, quote, idea, or anything that will help others be more successful at building companies..." %>
+    <%= text_area_tag "tweet[tweet_text]", nil, class: "form-control", placeholder: "Share something..." %>
   </div>
   <div class="form-group hidden">
     <img id="tweet-img-preview">

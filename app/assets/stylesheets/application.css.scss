@@ -22,3 +22,18 @@ body {
   font-family: 'Lato';
   padding-top: 75px;
 }
+
+.btn-danger {
+  background-color: #7f00ff !important;
+  border-color: #7f00ff !important;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color:  white !important;
+    background-color: #1cdd76 !important;
+}
+
+a {
+    color: #000 ;
+    text-decoration: none;
+}

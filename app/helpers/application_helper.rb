@@ -16,7 +16,7 @@ module ApplicationHelper
     if user_signed_in?
       '/assets/bg23.png'
     else
-      '/assets/bg34.png'
+      '/assets/bg47.png'
     end
   end
 end
